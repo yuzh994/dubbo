@@ -24,6 +24,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ *
+ * #使用cmd，到项目根目录下，运行命令：
+ * mvn clean install -Dmaven.test.skip=true
+ *
+ * #再运行命令(idea中更新不完整依赖命令)：
+ * mvn -U idea:idea
+ *
+ */
+
 @SpringBootApplication
 @EnableDubbo(scanBasePackages = {"org.apache.dubbo.springboot.demo.provider"})
 public class ProviderApplication {
